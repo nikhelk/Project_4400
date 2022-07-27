@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.brand_new_4400.wf5Controller">
+   <children>
+      <Label layoutX="208.0" layoutY="66.0" prefHeight="39.0" prefWidth="218.0" text="WRITE RECIPE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="124.0" text="Name: " />
+      <Label layoutX="31.0" layoutY="162.0" text="Diet Tags:" />
+      <Label layoutX="32.0" layoutY="209.0" text="Cuisines: " />
+      <Label layoutX="31.0" layoutY="260.0" text="Instructions: " />
+      <Label layoutX="450.0" layoutY="115.0" text="Products:" />
+      <TextArea fx:id="instructions_input" layoutX="109.0" layoutY="248.0" prefHeight="103.0" prefWidth="96.0" />
+      <TableView fx:id="recipe_product_table" editable="true" layoutX="351.0" layoutY="140.0" prefHeight="137.0" prefWidth="225.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="75.0" text="name" />
+          <TableColumn fx:id="amount" prefWidth="75.0" text="amount" />
+        </columns>
+      </TableView>
+      <Button fx:id="wf5_add_diet_tag" layoutX="295.0" layoutY="157.0" mnemonicParsing="false" onAction="#add_diet_tag" text="+" />
+      <Button fx:id="wf5_add_cuisines" layoutX="295.0" layoutY="204.0" mnemonicParsing="false" onAction="#add_cuisine" text="+" />
+      <HBox fx:id="wf5_diet_tag_hbox" layoutX="106.0" layoutY="157.0" prefHeight="27.0" prefWidth="182.0">
+         <children>
+            <TextField fx:id="diet_tag_1" prefHeight="27.0" prefWidth="48.0" />
+            <TextField fx:id="diet_tag_2" prefHeight="27.0" prefWidth="48.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="wf5_cuisine_hbox" layoutX="106.0" layoutY="204.0" prefHeight="27.0" prefWidth="182.0">
+         <children>
+            <TextField fx:id="cuisine_1" prefHeight="27.0" prefWidth="48.0" />
+            <TextField fx:id="cuisine_2" prefHeight="27.0" prefWidth="48.0" />
+         </children>
+      </HBox>
+      <Button fx:id="Save_button" layoutX="382.0" layoutY="72.0" mnemonicParsing="false" onAction="#save_recipe" text="SAVE RECIPE" />
+      <TextField fx:id="name_input" layoutX="106.0" layoutY="119.0" prefHeight="27.0" prefWidth="94.0" />
+      <Label fx:id="error_area" layoutX="328.0" layoutY="123.0" />
+      <Button fx:id="go_back" layoutX="38.0" layoutY="27.0" mnemonicParsing="false" onAction="#go_to_wf4" text="Back" />
+      <Button fx:id="log_out" layoutX="485.0" layoutY="25.0" mnemonicParsing="false" onAction="#logOut" text="Log out" />
+      <Button fx:id="add_product_button" layoutX="220.0" layoutY="351.0" mnemonicParsing="false" onAction="#add_to_product_table" prefHeight="27.0" prefWidth="143.0" text="Add Product to Recipe" />
+      <Button fx:id="add_product_not_there" layoutX="394.0" layoutY="286.0" mnemonicParsing="false" onAction="#go_to_wf6" prefHeight="27.0" prefWidth="163.0" text="Don't see product? Add it!" />
+      <ComboBox fx:id="product_selection" layoutX="218.0" layoutY="286.0" prefHeight="27.0" prefWidth="154.0" promptText="Pick a Product" />
+      <Label fx:id="Amt_label" layoutX="222.0" layoutY="322.0" text="Amt:" />
+      <TextField fx:id="amount_input" layoutX="253.0" layoutY="317.0" prefHeight="27.0" prefWidth="38.0" />
+   </children>
+</Pane>

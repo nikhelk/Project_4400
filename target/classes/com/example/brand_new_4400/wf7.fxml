@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pain" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.brand_new_4400.wf7Controller">
+   <children>
+      <Label layoutX="237.0" layoutY="44.0" text="My Recipes">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="log_off" onAction="#logOut" layoutX="491.0" layoutY="173.0" mnemonicParsing="false" text="LOG OFF" />
+      <Button fx:id="go_back" layoutX="501.0" layoutY="107.0" mnemonicParsing="false" onAction="#go_to_wf4" text="BACK" />
+      <TableView fx:id="wf7_table" fixedCellSize="1.0" layoutX="109.0" layoutY="100.0" opacity="0.0" prefHeight="200.0" prefWidth="382.0">
+        <columns>
+          <TableColumn fx:id="id_col" prefWidth="48.0" text="ID" />
+          <TableColumn fx:id="name_col" prefWidth="218.0" text="NAME" />
+          <TableColumn fx:id="average_rating_col" prefWidth="115.0" text="AVG RATING" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

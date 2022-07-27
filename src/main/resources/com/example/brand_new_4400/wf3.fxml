@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.brand_new_4400.wf3Controller">
+   <children>
+      <Button fx:id="log_out_button" layoutX="38.0" layoutY="26.0" mnemonicParsing="false" onAction="#logOut" text="Log out" />
+      <Button fx:id="home_chef_select" layoutX="105.0" layoutY="144.0" mnemonicParsing="false" onAction="#go_to_wf12" text="Home Chef" />
+      <Button fx:id="contributor_select" layoutX="341.0" layoutY="144.0" mnemonicParsing="false" onAction="#go_to_wf4" text="Contributor" />
+   </children>
+</Pane>

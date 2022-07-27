@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.brand_new_4400.wf13Controller">
+   <children>
+      <Button fx:id="go_back" layoutX="26.0" layoutY="37.0" mnemonicParsing="false" onAction="#go_to_wf12" text="BACK" />
+      <Button fx:id="log_off" layoutX="494.0" layoutY="37.0" mnemonicParsing="false" onAction="#logOut" text="LOG OFF" />
+      <Label layoutX="231.0" layoutY="19.0" text="My Products">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="wf13_table" layoutX="21.0" layoutY="125.0" prefHeight="160.0" prefWidth="563.0">
+         <columns>
+            <TableColumn fx:id="name_col" prefWidth="75.0" text="NAME" />
+            <TableColumn fx:id="types_col" prefWidth="128.0" text="TYPES" />
+            <TableColumn fx:id="units_col" prefWidth="55.0" text="UNITS" />
+            <TableColumn fx:id="amount_owned_col" prefWidth="74.0" text="AMOUNT OWNED" />
+            <TableColumn fx:id="update_group_col" prefWidth="230.0" text="UPDATE" />
+         </columns>
+      </TableView>
+      <Label layoutX="341.0" layoutY="87.0" text="Search By Name:" />
+      <Label layoutX="110.0" layoutY="58.0" text="Filters" />
+      <Button ellipsisString="...." layoutX="295.0" layoutY="82.0" mnemonicParsing="false" onAction="#add_type" prefHeight="21.0" prefWidth="23.0" text="+" />
+      <Label layoutX="62.0" layoutY="87.0" text="Types:" />
+      <HBox fx:id="types_hbox" layoutX="110.0" layoutY="82.0" prefHeight="21.0" prefWidth="187.0">
+         <children>
+            <TextField onKeyTyped="#update_filters" prefHeight="1.0" prefWidth="87.0" />
+            <TextField onKeyTyped="#update_filters" prefHeight="1.0" prefWidth="87.0" />
+         </children>
+      </HBox>
+      <TextField fx:id="name_input" layoutX="461.0" layoutY="82.0" onKeyTyped="#update_filters" prefHeight="31.0" prefWidth="112.0" />
+      <TextField fx:id="amount_input" layoutX="48.0" layoutY="329.0" prefHeight="27.0" prefWidth="38.0" />
+      <Label fx:id="Amt_label" layoutX="17.0" layoutY="334.0" text="Amt:" />
+      <ComboBox fx:id="product_selection" layoutX="22.0" layoutY="296.0" prefHeight="27.0" prefWidth="154.0" promptText="Pick a Product" />
+      <Button fx:id="add_product_button" layoutX="21.0" layoutY="360.0" mnemonicParsing="false" onAction="#add_to_product_table" prefHeight="27.0" prefWidth="146.0" text="Add to My Products" />
+      <Hyperlink fx:id="hyper" layoutX="184.0" layoutY="285.0" onAction="#go_to_wf6" prefHeight="59.0" prefWidth="180.0" text="Don't see product? Add it!" />
+      <Label fx:id="error_area" layoutX="216.0" layoutY="348.0" prefHeight="17.0" prefWidth="202.0" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.brand_new_4400.wf10Controller">
+   <children>
+      <Button fx:id="go_back" layoutX="42.0" layoutY="56.0" mnemonicParsing="false" onAction="#go_to_wf9" text="BACK" />
+      <Button fx:id="log_off" onAction="#logOut" layoutX="500.0" layoutY="56.0" mnemonicParsing="false" text="LOG OFF" />
+      <Label layoutX="247.0" layoutY="54.0" text="Write Review">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Text layoutX="177.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating:" />
+      <Text layoutX="154.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comment:" />
+      <Button fx:id="save_button" layoutX="273.0" layoutY="304.0" mnemonicParsing="false" onAction="#add_review" text="SAVE" />
+      <TextArea fx:id="comment_input" layoutX="229.0" layoutY="159.0" prefHeight="123.0" prefWidth="200.0" />
+      <TextField fx:id="rating_input" layoutX="229.0" layoutY="120.0" prefHeight="31.0" prefWidth="34.0" />
+      <Text layoutX="273.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/ 5" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.brand_new_4400.wf4Controller">
+    <children>
+        <Button fx:id="back_button" layoutX="38.0" layoutY="26.0" mnemonicParsing="false" onAction="#go_to_wf3" text="Back" />
+        <Button fx:id="write_recipe_select" layoutX="105.0" layoutY="144.0" mnemonicParsing="false" onAction="#go_to_wf5" text="Write Recipe" />
+        <Button fx:id="browse_recipe_select" layoutX="212.0" layoutY="144.0" mnemonicParsing="false" onAction="#go_to_wf11" text="Browse Recipes" />
+      <Button fx:id="see_recipe_select" layoutX="346.0" layoutY="144.0" mnemonicParsing="false" onAction="#go_to_wf7" text="See My Recipes" />
+      <Button fx:id="log_out" layoutX="490.0" layoutY="33.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+      <Label layoutX="195.0" layoutY="43.0" text="Contributor Home">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="average_rating_area" layoutX="277.0" layoutY="85.0" />
+    </children>
+</Pane>

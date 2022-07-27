@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.brand_new_4400.wf6Controller">
+    <children>
+        <Button fx:id="back_button" layoutX="39.0" layoutY="36.0" mnemonicParsing="false" onAction="#go_back" text="BACK" />
+        <Button fx:id="log_off" layoutX="497.0" layoutY="36.0" mnemonicParsing="false" onAction="#logOut" text="LOG OFF" />
+        <Label layoutX="231.0" layoutY="34.0" text="Add Product">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="181.0" layoutY="110.0" text="Name:" />
+        <Label layoutX="182.0" layoutY="157.0" text="Types:" />
+        <TextField fx:id="input_name" layoutX="231.0" layoutY="105.0" />
+        <Button fx:id="add_type" ellipsisString="...." layoutX="435.0" layoutY="152.0" mnemonicParsing="false" onAction="#add_da_type" prefHeight="21.0" prefWidth="23.0" text="+" />
+        <Label layoutX="184.0" layoutY="256.0" text="Tool?" />
+        <CheckBox fx:id="is_tool" layoutX="231.0" layoutY="255.0" mnemonicParsing="false" onAction="#fun_times" />
+        <Button fx:id="add_product" layoutX="272.0" layoutY="287.0" mnemonicParsing="false" onAction="#add_to_product_table" text="SAVE" />
+        <HBox fx:id="types_hbox" layoutX="235.0" layoutY="157.0" prefHeight="42.0" prefWidth="187.0">
+            <children>
+                <TextField prefHeight="1.0" prefWidth="87.0" />
+                <TextField prefHeight="1.0" prefWidth="87.0" />
+            </children>
+        </HBox>
+      <Label layoutX="182.0" layoutY="208.0" text="Units: " />
+      <TextField fx:id="unit_input" layoutX="231.0" layoutY="203.0" />
+      <Label fx:id="error_area" layoutX="189.0" layoutY="330.0" prefHeight="17.0" prefWidth="246.0" textFill="RED" />
+    </children>
+</AnchorPane>

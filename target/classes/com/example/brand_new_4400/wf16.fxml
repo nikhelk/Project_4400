@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id = "pain_wf16" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.brand_new_4400.wf16Controller">
+   <children>
+      <TableView fx:id="wf16_table" editable="true" fixedCellSize="1.0" layoutX="39.0" layoutY="114.0" prefHeight="200.0" prefWidth="522.0" opacity="0">
+         <columns>
+            <TableColumn fx:id="id_col" prefWidth="50.0" text="RECIPE ID" />
+            <TableColumn fx:id="user_col" prefWidth="157.0" text="USER" />
+            <TableColumn fx:id="rating_col" prefWidth="76.0" text="RATING" />
+            <TableColumn fx:id="comment_col" prefWidth="238.0" text="COMMENT" />
+         </columns>
+      </TableView>
+      <Button fx:id="go_back" layoutX="42.0" layoutY="56.0" mnemonicParsing="false" onAction="#go_to_wf15" text="BACK" />
+      <Button fx:id="log_off" onAction="#logOut" layoutX="500.0" layoutY="56.0" mnemonicParsing="false" text="LOG OFF" />
+      <Label layoutX="284.0" layoutY="55.0" prefHeight="30.0" prefWidth="123.0" text=" - Reviews">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="name_space" layoutX="226.0" layoutY="55.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
